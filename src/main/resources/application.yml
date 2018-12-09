@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: zookeeper-backend-service-demo
+server:
+  port: 8081
