@@ -11,6 +11,11 @@ public class ZookeeperBackendServiceDemoController {
     @Autowired
     Environment environment;
 
+    @GetMapping("/")
+    public String index() {
+        return "Hello from Zookeeper Demo Backend Service";
+    }
+
     @GetMapping("/helloworld")
     public String helloWorld() {
         return "Hello World from: " + environment.getProperty("server.port");
