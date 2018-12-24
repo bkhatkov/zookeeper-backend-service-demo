@@ -4,12 +4,8 @@ spring:
   cloud:
     zookeeper:
       discovery:
-        
         metadata:
-          tenant-bound: yes
-          tenant:
-            - tenant1
-            - tenant2
-
+          version: V1
+          tenant: default
 server:
   port: 8081
